@@ -1,0 +1,70 @@
+#section--Top .topTitle {
+    animation: textAppear 1 ease-in 1s;
+}
+
+#section--Top .astronautTop:hover{
+    animation-name: loopAstronaut;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+#section--Middle .planets{
+    animation-name: loopPlanets;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+#section--Top .scrollButton {
+    animation-name: loopArrowDown;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/*ANIMATIONS*/
+@keyframes textAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes loopArrowDown {
+    0% {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(30%);
+    }
+}
+
+@keyframes loopAstronaut {
+    0% {
+        transform: translateY(-2%)
+    }
+        
+}
+
+@keyframes loopPlanets {
+    0% {
+        opacity: 75%;
+        transform: translateY(5%)
+    }
+        
+}

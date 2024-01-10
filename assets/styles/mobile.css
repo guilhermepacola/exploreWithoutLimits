@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-base-blue-gradient: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    --color-base-pink: hsla(320, 69%, 42%, 1);
+    --color-base-blue: hsla(244, 38%, 28%, 1);
+    --color-base-gray: hsla(283, 47%, 97%, 1);
+}
+
+form input,
+form textarea,
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
+    color: var(--color-base-blue);
+    background: var(--color-base-gray);
+}
+
+a{
+    width: 5.8rem;
+    height: 10.4rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/*HERO STYLES*/
+#section--Top {
+    padding: 0 3.4rem 9.3rem 3.2rem;
+    text-align: center;
+}
+
+.textTop {
+    margin-top: 1.7rem;
+}
+
+.textTop h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 900;
+
+    color: var(--color-base-pink);
+}
+
+.textTop p {
+    font-weight: 600;
+    font-size: 2rem;
+
+    margin-bottom: 3.5rem;
+}
+
+.textTop .scrollButton {
+    width: 5.8rem;
+    height: 10.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+/*CARDS STYLE*/
+#section--Middle {
+    background: var(--color-base-blue-gradient);
+    padding: 5.5rem 3.9rem;
+
+    display: grid;
+    gap: 4.9rem;
+    justify-content: center;
+}
+
+.planets{
+   filter: drop-shadow(-5px 8px 5px #222);
+}
+
+
+.itens {
+    background-color: var(--color-base-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+
+    padding: 2.6rem;
+
+
+    border-radius: 2rem;
+    box-shadow: 1px 2px 13px 0px rgba(219, 217, 217, 0.43);
+}
+
+.itens img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.itens h2 {
+    color: var(--color-base-pink);
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 3.6rem;
+}
+
+.itens p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
+
+}
+
+.itens figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+
+    width: 27.5rem;
+}
+
+/*END STYLES*/
+#section--End {
+    width: 100%;
+    padding: 7.8rem 4.3rem 6.5rem;
+}
+
+fieldset {
+    margin-top: 4.3rem;
+    border: none;
+}
+
+form .fieldset--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+
+}
+
+.input--Wrapper label {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.input--Wrapper #yourName {
+    background: url(../images/bg-name-field.svg) no-repeat 1.4rem 1.2rem;
+}
+
+.input--Wrapper #yourEmail {
+    background: url(../images/bg-email-field.svg) no-repeat 1.4rem 1.2rem;
+}
+
+.input--Wrapper input {
+    padding: 1.2rem 1.6rem 1.2rem 5.0rem;
+}
+
+
+.input--Wrapper input,
+.input--Wrapper textarea {
+    width: 340px;
+    font-weight: 600;
+    line-height: 2.24rem;
+
+    border: 1.5px solid var(--color-base-blue);
+    border-radius: 1.6rem;
+}
+
+.input--Wrapper input:focus,
+.input--Wrapper textarea:focus,
+form button:focus {
+
+    outline: solid 1px var(--color-base-blue);
+}
+
+.input--Wrapper textarea {
+    height: 12.6rem;
+    resize: none;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+
+}
+
+.input--Wrapper input::placeholder,
+textarea::placeholder {
+    color: var(--color-base-blue);
+}
+
+
+form h2 {
+    color: var(--color-base-pink);
+    font-weight: 900;
+    text-align: center;
+}
+
+form button {
+    background: var(--color-base-blue-gradient);
+
+    border: none;
+    border-radius: 1.6rem;
+
+    padding: 1.6rem;
+
+    width: 15.5rem;
+
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 1);
+
+    text-align: center;
+    box-shadow: 0px 4px 5px rgb(99, 99, 99);
+
+}
+
+form button:hover {
+    filter: brightness(0.7);
+    transition: 1s;
+    box-shadow: none;
+}
+
+/*FOOTER STYLES*/
+footer {
+    padding: 1.6rem;
+    background: var(--color-base-blue-gradient);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    text-align: center;
+    color: var(--color-base-gray);
+}
